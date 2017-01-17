@@ -1,1 +1,237 @@
 Test
+    1  sudo apt-get update
+    2  sudo reboot
+    3  sudo ./install_things.sh
+    4  cd /etc/apt/
+    5  ls
+    6  cd preferences.d/
+    7  ls
+    8  cd ../
+    9  ls
+   10  sudo sources.list
+   11  sudo gedit sources.list
+   12  ls
+   13  cd preferences.d/
+   14  ls
+   15  touch 01_release
+   16  sudo touch 01_release
+   17  sudo gedit 01_release 
+   18  sudo apt-get update
+   19  sudo apt-get install libgstreamer0.10-0 libgstreamer-plugins-base0.10-0.
+   20  ls
+   21  cd 
+   22  ls
+   23  cd Downloads/
+   24  ls
+   25  sudo gdebi rstudio-1.0.136-amd64.deb 
+   26  cd
+   27  apt-get install rstudio
+   28  sudo apt-get install rstudio
+   29  sudo apt-get -f install
+   30  ls
+   31  cd Downloads/
+   32  ls
+   33  sudo gdebi rstudio-1.0.136-amd64.deb 
+   34  sudo apt-get install rstudio
+   35  sudo rstudio 
+   36  cd
+   37  clear
+   38  =ls
+   39  clear
+   40  ls
+   41  cd Downloads/
+   42  ls
+   43  bash Miniconda3-latest-Linux-x86_64.sh 
+   44  df -h
+   45  cd
+   46  ls
+   47  conda update conda
+   48  exit
+   49  ls
+   50  conda update conda
+   51  ls
+   52  df -h
+   53  conda install numpy
+   54  df -h
+   55  conda install jupyter
+   56  ls
+   57  jupyter 
+   58  df -h
+   59  conda install numpy
+   60  conda install scipy
+   61  df -h
+   62  jupyter notebook
+   63  ls
+   64  clear
+   65  ls
+   66  cd Desktop/
+   67  ls
+   68  exit
+   69  ls
+   70  pwd
+   71  cd lab-work
+   72  pwd
+   73  cd class-assignments
+   74  cd Desktop
+   75  pwd
+   76  cd EEB-177
+   77  cd lab-work
+   78  pwd
+   79  mkdir exercise-1
+   80  git add exercise-1
+   81  ls -a
+   82  git init
+   83  touch README.txt
+   84  gedit README.txt
+   85  git add README.txt
+   86  get commit -m "initial commit: adding README file"
+   87  git log
+   88  git commit -m "initial commit: adding README file"
+   89  git log
+   90  git init
+   91  git config --global user.name "Jeffrey Lee"
+   92  git config --global user.name "mach1lee@gmail.com"
+   93  git init
+   94  cd exercise-1
+   95  git init
+   96  cd lab-work
+   97  cd eeb-177
+   98  cd desktop
+   99  pwd
+  100  cd lab-work
+  101  cd eeb-177
+  102  cd desktop
+  103  cd Desktop
+  104  cd EEB-177
+  105  cd Lab-work
+  106  cd lab-work
+  107  git remote add origin https://github.com/Jeffrey-Lee1797/Lab-Work.git
+  108  git push -u origin master
+  109  cd exercise-1
+  110  cd lab-work
+  111  touch README.txt
+  112  sudo gedit README.txt
+  113  git add README.txt
+  114  git status
+  115  git init
+  116  cd EEB-177
+  117  cd Desktop
+  118  cd EEB-177
+  119  cd labwork
+  120  cd lab-work
+  121  git add exercise-1
+  122  git add <exercise-1>
+  123  git add exercise-1/README.txt
+  124  git status
+  125  cd exercise-1
+  126  git init
+  127  git log
+  128  git add exercise-1
+  129  cd lab-work
+  130  git commit exercise-1/README.txt
+  131  git status
+  132  cd Desktop
+  133  cd EEB-177
+  134  cd lab-work
+  135  git add exercise-1/README.txt
+  136  git status
+  137  git commit
+  138  git commit exercise-1/README.txt
+  139  cd Desktop
+  140  cd EEB-177
+  141  cd lab-work
+  142  git status
+  143  git commit 
+  144  cd Desktop
+  145  cd EEB-177
+  146  cd lab-work
+  147  cd exercise-1
+  148  git commit
+  149  cd Desktop
+  150  cd EEB-177
+  151  cd lab-work
+  152  git status
+  153  git add exercise-1/README.txt
+  154  git status
+  155  git push
+  156  git status
+  157  cd Desktop
+  158  cd EEB-177
+  159  mkdir homework
+  160  cd..
+  161  cd ..
+  162  cd lab-work
+  163  cd eeb-188
+  164  cd EEB-177
+  165  cd lab-work
+  166  git branch
+  167  git checkout -b dummy-branch
+  168  git branch
+  169  cd exercise-1
+  170  touch dummy-file
+  171  cd ..
+  172  git add exercise-1/dummy-file
+  173  git commit
+  174  git push
+  175  git push --set upstream origin dummy-branch
+  176  git status
+  177  git commit
+  178  git push
+  179  git branch
+  180  git add exercise-1/dummy-file.txt
+  181  git add exercise-1/dummy-file
+  182  git status
+  183  git commit
+  184  git push
+  185  git log --decorate
+  186  cd desktop
+  187  cd Desktop
+  188  cd EEB-177
+  189  cd lab-work
+  190  git branch
+  191  git checkout master
+  192  git branch
+  193  cd exercise-1
+  194  ls
+  195  git checkout dummy-branch
+  196  ls
+  197  git checkout master
+  198  git merge dummy-branch
+  199  ls
+  200  git rm dummy-file
+  201  git log
+  202  cd Desktop
+  203  git log
+  204  cd EEB-177
+  205  git lo
+  206  git log
+  207  cd lab-work
+  208  git log
+  209  cd class-assignments
+  210  cd EEB-177
+  211  cd class-assignments
+  212  gedit
+  213  git add classwork-tuesday-1-17.txt
+  214  git commit -m "Classwork Tuesday 1-17"
+  215  git push
+  216  git status
+  217  cd CSB
+  218  cd ~
+  219  cd Desktop/EEB-177/class-assignments/
+  220  gedit badly-named-file.txt
+  221  cp badly-named-file.txt EEB-177
+  222  gedit 
+  223  cp badly-named-file.txt EEB-177
+  224  mv badly-named-file badly-named-file.txt
+  225  cp badly-named-file.txt EEB-177
+  226  cd ..
+  227  ls
+  228  man
+  229  man ls
+  230  man bash
+  231  man cd
+  232  cd class-assignments/
+  233  cp badly-named-file.txt /home/eeb177-student/Desktop
+  234  man rm
+  235  history 
+  236  history >> classwork-tuesday-1-17.txt
