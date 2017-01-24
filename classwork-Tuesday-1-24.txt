@@ -1,2 +1,54 @@
 Desktop/EEB-177/class-assignments/classwork-tuesday-1-17.txt
 Desktop/EEB-177/class-assignments/classwork-Tuesday-1-24.txt
+
+  227  cd Desktop/EEB-177/class-assignments/
+  228  gedit classwork-Tuesday-1-24.txt
+  229  git add classwork-Tuesday-1-24.txt
+  230  git commit -m "Classwork 1-24"
+  231  git push
+  232  cd ..
+  233  cd..
+  234  cd CSB/unix/
+  235  cd sandbox
+  236  wget http://tinyurl.com/cep-taxa -0 cep-taxa.txt
+  237  wget http://tinyurl.com/cep-taxa -O cep-taxa.txt
+  238  less cep-taxa.txt
+  239  grep Orchidacea cep-taxa.txt
+  240  grep Orchidacea cep-taxa.txt | wc -l
+  241  grep falcon cep-taxa.txt
+  242  grep Falcon cep-taxa.txt
+  243  grep -i Falcon cep-taxa.txt
+  244  grep Ara -i cep-taxa.txt
+  245  grep -w Ara -i cep-taxa.txt
+  246  grep Cebus -b 3 cep-taxa.txt
+  247  grep Cebus -B 3 cep-taxa.txt
+  248  grep iguana -i -n cep-taxa.txt
+  249  grep ara -v -n cep-taxa.txt
+  250  grep iguana -i -n -c cep-taxa.txt
+  251  grep ara -v -n -c cep-taxa.txt
+  252  grep ara -v -n -c -i -w  cep-taxa.txt
+  253  grep -v -c -i -w ara cep-taxa.txt > non-macaws.txt
+  254  ls - l
+  255  ls -l
+  256  ls
+  257  ls -l
+  258  find ../sandbox
+  259  cd ../Data
+  260  cd ../
+  261  cd data/
+  262  find cd /home/Desktop/EEB-177/class-assignments 
+  263  cd ~
+  264  cd Desktop/EEB-177/
+  265  cd ..
+  266  cd..
+  267  cd ..
+  268  find Desktop/EEB-177/ -iname "*classwork*"
+  269  find Desktop/EEB-177/ -iname "*classwork*" >> Desktop/EEB-177/class-assignments/classwork-Tuesday-1-24.txt
+  270  cd Desktop/EEB-177/class-assignments/
+  271  ls
+  272  git add classwork-Tuesday-1-24.txt
+  273  git commit-m "Classwork 1-24"
+  274  git commit -m "Classwork 1-24"
+  275  git push
+  276  cd Desktop/EEB-177/class-assignments/
+  277  history >> classwork-Tuesday-1-24.txt
