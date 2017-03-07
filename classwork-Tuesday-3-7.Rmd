@@ -1,0 +1,35 @@
+---
+title: "classwork-Tuesday-3-7"
+output: html_document
+---
+
+``` {r}
+library(paleobioDB)
+library(paleotree)
+
+```
+``` {r}
+#get data
+data(graptPBDB)
+
+#get species sorted occurances
+occSpecies <- taxonSortPBDBocc(graptOccPBDB, rank = "species")
+plotOccData(occSpecies, groupLabel = "Species")
+
+#convert occurance data to "timelist" format
+graphTimeSpecies <- occData2timeList(occList = occSpecies)
+
+#plot diversity through time
+taxicDivDisc(graphTimeSpecies)
+
+#pdf(file = "dtt.pdf")
+#taxicDivDisc(graphTimeSpecies)
+```
+
+``` {r}
+#occSpecies <-taxonSortPBDBocc(graptOccPBDB, rank = "species")
+#occGenera <- taxonSortPBDBocc(graptOccPBDB, rank = "genus")
+
+#graphTimeGenus <- occData2timeList(occList = occGenera)
+
+```
