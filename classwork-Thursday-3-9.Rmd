@@ -1,0 +1,34 @@
+---
+title: "classwork-Thursday-3-9"
+output: html_document
+---
+
+
+```{r}
+# Read in the file
+library(ggplot2)
+setwd("/home/eeb177-student/Desktop/EEB-177/Class-Assignments")
+
+canids <- read.csv("/home/eeb177-student/Desktop/EEB-177/Homework/week-8/canid-ranges.csv", header =F, as.is = T)
+
+names(canids) <- c("genus", "species", "minage", "maxage")
+head(canids)
+```
+
+```{r}
+canid_occ <- ggplot(canids, aes( species, ymin = maxage, ymax=minage, colour = genus))
+canid_occ <- canid_occ + geom_linerange()
+# Remove the legend
+canid_occ <- canid_occ + theme(legend.position="none") 
+# Flip axis
+canid_occ <- canid_occ + coord_flip() 
+# Change text size
+canid_occ <- canid_occ +  theme(axis.text.y = element_text(size=3)) 
+# Remove tick marks on y-axis
+canid_occ <- canid_occ + theme(axis.ticks.y=element_blank()) 
+# Remove excess white space
+canid_occ <- canid_occ + scale_y_continuous(limits=c(0, 40), expand = c(0, 0), breaks=c(0, 10, 20, 30, 40)) 
+# Add title and labels
+canid_occ <- canid_occ + labs(title = "Canid Fossil Occurrences", x = "Species", y = "Ma ago") + theme(plot.title = element_text(hjust = 0.5, size=22, face = "bold"), axis.title =element_text(size=20))  
+canid_occ
+```
